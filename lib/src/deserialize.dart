@@ -213,7 +213,7 @@ import 'package:pokeapi/src/model/pokemon_color_summary.dart';
 import 'package:pokeapi/src/model/pokemon_detail.dart';
 import 'package:pokeapi/src/model/pokemon_detail_abilities_inner.dart';
 import 'package:pokeapi/src/model/pokemon_detail_cries.dart';
-import 'package:pokeapi/src/model/pokemon_detail_held_items.dart';
+import 'package:pokeapi/src/model/pokemon_detail_held_items_inner.dart';
 import 'package:pokeapi/src/model/pokemon_detail_moves_inner.dart';
 import 'package:pokeapi/src/model/pokemon_detail_moves_inner_version_group_details_inner.dart';
 import 'package:pokeapi/src/model/pokemon_detail_past_abilities_inner.dart';
@@ -921,8 +921,8 @@ ReturnType deserialize<ReturnType, BaseType>(dynamic value, String targetType,
     case 'PokemonDetailCries':
       return PokemonDetailCries.fromJson(value as Map<String, dynamic>)
           as ReturnType;
-    case 'PokemonDetailHeldItems':
-      return PokemonDetailHeldItems.fromJson(value as Map<String, dynamic>)
+    case 'PokemonDetailHeldItemsInner':
+      return PokemonDetailHeldItemsInner.fromJson(value as Map<String, dynamic>)
           as ReturnType;
     case 'PokemonDetailMovesInner':
       return PokemonDetailMovesInner.fromJson(value as Map<String, dynamic>)

@@ -7,7 +7,7 @@ import 'package:pokeapi/src/model/ability_detail_pokemon_inner_pokemon.dart';
 import 'package:pokeapi/src/model/item_detail_held_by_pokemon_inner_version_details_inner.dart';
 import 'package:json_annotation/json_annotation.dart';
 
-part 'pokemon_detail_held_items.g.dart';
+part 'pokemon_detail_held_items_inner.g.dart';
 
 @JsonSerializable(
   checked: true,
@@ -15,9 +15,9 @@ part 'pokemon_detail_held_items.g.dart';
   disallowUnrecognizedKeys: false,
   explicitToJson: true,
 )
-class PokemonDetailHeldItems {
-  /// Returns a new [PokemonDetailHeldItems] instance.
-  PokemonDetailHeldItems({
+class PokemonDetailHeldItemsInner {
+  /// Returns a new [PokemonDetailHeldItemsInner] instance.
+  PokemonDetailHeldItemsInner({
     required this.item,
     required this.versionDetails,
   });
@@ -31,17 +31,17 @@ class PokemonDetailHeldItems {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-      other is PokemonDetailHeldItems &&
+      other is PokemonDetailHeldItemsInner &&
           other.item == item &&
           other.versionDetails == versionDetails;
 
   @override
   int get hashCode => item.hashCode + versionDetails.hashCode;
 
-  factory PokemonDetailHeldItems.fromJson(Map<String, dynamic> json) =>
-      _$PokemonDetailHeldItemsFromJson(json);
+  factory PokemonDetailHeldItemsInner.fromJson(Map<String, dynamic> json) =>
+      _$PokemonDetailHeldItemsInnerFromJson(json);
 
-  Map<String, dynamic> toJson() => _$PokemonDetailHeldItemsToJson(this);
+  Map<String, dynamic> toJson() => _$PokemonDetailHeldItemsInnerToJson(this);
 
   @override
   String toString() {

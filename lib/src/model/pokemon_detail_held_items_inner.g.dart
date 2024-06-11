@@ -1,22 +1,22 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'pokemon_detail_held_items.dart';
+part of 'pokemon_detail_held_items_inner.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-PokemonDetailHeldItems _$PokemonDetailHeldItemsFromJson(
+PokemonDetailHeldItemsInner _$PokemonDetailHeldItemsInnerFromJson(
         Map<String, dynamic> json) =>
     $checkedCreate(
-      'PokemonDetailHeldItems',
+      'PokemonDetailHeldItemsInner',
       json,
       ($checkedConvert) {
         $checkKeys(
           json,
           requiredKeys: const ['item', 'version_details'],
         );
-        final val = PokemonDetailHeldItems(
+        final val = PokemonDetailHeldItemsInner(
           item: $checkedConvert(
               'item',
               (v) => AbilityDetailPokemonInnerPokemon.fromJson(
@@ -34,8 +34,8 @@ PokemonDetailHeldItems _$PokemonDetailHeldItemsFromJson(
       fieldKeyMap: const {'versionDetails': 'version_details'},
     );
 
-Map<String, dynamic> _$PokemonDetailHeldItemsToJson(
-        PokemonDetailHeldItems instance) =>
+Map<String, dynamic> _$PokemonDetailHeldItemsInnerToJson(
+        PokemonDetailHeldItemsInner instance) =>
     <String, dynamic>{
       'item': instance.item.toJson(),
       'version_details':

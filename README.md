@@ -399,7 +399,7 @@ Class | Method | HTTP request | Description
  - [PokemonDetail](doc/PokemonDetail.md)
  - [PokemonDetailAbilitiesInner](doc/PokemonDetailAbilitiesInner.md)
  - [PokemonDetailCries](doc/PokemonDetailCries.md)
- - [PokemonDetailHeldItems](doc/PokemonDetailHeldItems.md)
+ - [PokemonDetailHeldItemsInner](doc/PokemonDetailHeldItemsInner.md)
  - [PokemonDetailMovesInner](doc/PokemonDetailMovesInner.md)
  - [PokemonDetailMovesInnerVersionGroupDetailsInner](doc/PokemonDetailMovesInnerVersionGroupDetailsInner.md)
  - [PokemonDetailPastAbilitiesInner](doc/PokemonDetailPastAbilitiesInner.md)

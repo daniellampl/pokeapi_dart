@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **pastAbilities** | [**List&lt;PokemonDetailPastAbilitiesInner&gt;**](PokemonDetailPastAbilitiesInner.md) |  | 
 **forms** | [**List&lt;PokemonFormSummary&gt;**](PokemonFormSummary.md) |  | 
 **gameIndices** | [**List&lt;PokemonGameIndex&gt;**](PokemonGameIndex.md) |  | 
-**heldItems** | [**PokemonDetailHeldItems**](PokemonDetailHeldItems.md) |  | 
+**heldItems** | [**List&lt;PokemonDetailHeldItemsInner&gt;**](PokemonDetailHeldItemsInner.md) |  | 
 **locationAreaEncounters** | **String** |  | 
 **moves** | [**List&lt;PokemonDetailMovesInner&gt;**](PokemonDetailMovesInner.md) |  | 
 **species** | [**PokemonSpeciesSummary**](PokemonSpeciesSummary.md) |  | 

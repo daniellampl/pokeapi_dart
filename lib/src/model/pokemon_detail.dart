@@ -12,9 +12,9 @@ import 'package:pokeapi/src/model/pokemon_detail_types_inner.dart';
 import 'package:pokeapi/src/model/pokemon_detail_past_types_inner.dart';
 import 'package:pokeapi/src/model/pokemon_form_summary.dart';
 import 'package:pokeapi/src/model/pokemon_stat.dart';
-import 'package:pokeapi/src/model/pokemon_detail_held_items.dart';
 import 'package:pokeapi/src/model/pokemon_detail_moves_inner.dart';
 import 'package:pokeapi/src/model/pokemon_game_index.dart';
+import 'package:pokeapi/src/model/pokemon_detail_held_items_inner.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'pokemon_detail.g.dart';
@@ -84,7 +84,7 @@ class PokemonDetail {
   final List<PokemonGameIndex> gameIndices;
 
   @JsonKey(name: r'held_items', required: true, includeIfNull: false)
-  final PokemonDetailHeldItems heldItems;
+  final List<PokemonDetailHeldItemsInner> heldItems;
 
   @JsonKey(
       name: r'location_area_encounters', required: true, includeIfNull: false)

@@ -234,7 +234,7 @@ export 'package:pokeapi/src/model/pokemon_color_summary.dart';
 export 'package:pokeapi/src/model/pokemon_detail.dart';
 export 'package:pokeapi/src/model/pokemon_detail_abilities_inner.dart';
 export 'package:pokeapi/src/model/pokemon_detail_cries.dart';
-export 'package:pokeapi/src/model/pokemon_detail_held_items.dart';
+export 'package:pokeapi/src/model/pokemon_detail_held_items_inner.dart';
 export 'package:pokeapi/src/model/pokemon_detail_moves_inner.dart';
 export 'package:pokeapi/src/model/pokemon_detail_moves_inner_version_group_details_inner.dart';
 export 'package:pokeapi/src/model/pokemon_detail_past_abilities_inner.dart';

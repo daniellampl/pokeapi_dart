@@ -66,8 +66,10 @@ PokemonDetail _$PokemonDetailFromJson(Map<String, dynamic> json) =>
                   .toList()),
           heldItems: $checkedConvert(
               'held_items',
-              (v) =>
-                  PokemonDetailHeldItems.fromJson(v as Map<String, dynamic>)),
+              (v) => (v as List<dynamic>)
+                  .map((e) => PokemonDetailHeldItemsInner.fromJson(
+                      e as Map<String, dynamic>))
+                  .toList()),
           locationAreaEncounters:
               $checkedConvert('location_area_encounters', (v) => v as String),
           moves: $checkedConvert(
@@ -135,7 +137,7 @@ Map<String, dynamic> _$PokemonDetailToJson(PokemonDetail instance) {
       instance.pastAbilities.map((e) => e.toJson()).toList();
   val['forms'] = instance.forms.map((e) => e.toJson()).toList();
   val['game_indices'] = instance.gameIndices.map((e) => e.toJson()).toList();
-  val['held_items'] = instance.heldItems.toJson();
+  val['held_items'] = instance.heldItems.map((e) => e.toJson()).toList();
   val['location_area_encounters'] = instance.locationAreaEncounters;
   val['moves'] = instance.moves.map((e) => e.toJson()).toList();
   val['species'] = instance.species.toJson();
