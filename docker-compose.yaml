@@ -1,0 +1,24 @@
+services:
+  dart_api_generate:
+    container_name: codegen_pokeapi_dart
+    command: java -jar modules/openapi-generator-cli/target/openapi-generator-cli.jar generate -i /tmp/openapi.yml -g dart-dio -o /tmp/codegen/ --skip-validate-spec -c /tmp/config.yml
+    image: "openapitools/openapi-generator-cli:v7.6.0"
+    volumes:
+      - ./openapi.yml:/tmp/openapi.yml
+      - .:/tmp/codegen
+      - ./codegen-config.yaml:/tmp/config.yml
+    working_dir: /opt/openapi-generator
+
+  dart_api_prepare:
+    image: dart:stable
+    volumes:
+      - .:/opt/dart
+    working_dir: /opt/dart
+    command:
+      - /bin/sh
+      - -c
+      - |
+        dart pub get
+        dart run build_runner build --delete-conflicting-outputs
+        dart format .
+        dart fix --apply

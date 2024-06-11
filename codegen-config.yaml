@@ -1,0 +1,4 @@
+pubAuthor: Daniel Lampl
+pubLibrary: pokeapi
+pubName: pokeapi
+serializationLibrary: json_serializable
